@@ -1,13 +1,5 @@
-@mixin font {
-    font-family: 'Play', sans-serif;
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 18.5px;
-    color: #666666;
-}
-
 .oder-section {
-   background: url('../../img/bg/form.png') center top no-repeat;
+   background: url('../../../img/bg/form.png') center top no-repeat;
    min-height: 652px; 
    background-size: 100% 100%;
 }
@@ -16,7 +8,7 @@
     position: relative;
 
     &:before {
-       content: url(../../img/decor/polygon.png);
+       content: url(../../../img/decor/polygon.png);
        position: absolute;
        width: 50.63px;
        height: 50.63px;

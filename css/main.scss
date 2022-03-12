@@ -4,13 +4,15 @@ $baseFontSize: 16px;
 $grey: #F5F5F5;
 $white: #FFFFFF;
 
+$z-fixed-menu: 100;
+
 @mixin font {
     font-family: 'Play', sans-serif;
     font-weight: 400;
     font-size: 16px;
     line-height: 18.5px;
-    // color: #666666;
-    color: green;
+    color: #666666;
+    
 }
 
 @mixin font2 {
@@ -21,7 +23,7 @@ $white: #FFFFFF;
     color: #292929;
 }
 
-@import url(./layout/normalize.css);
+@import "./blocks/layout/normalize.css";
 
 @import url("https://fonts.googleapis.com/css2?family=Alegreya+Sans:wght@400;700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Play:wght@400;700&display=swap");
@@ -29,15 +31,15 @@ $white: #FFFFFF;
 
 
 
-@import url(./layout/layout.css);
-@import url(./components/hero.css);
-@import url(./section.css);
-@import url(./components/benefits.css);
-@import url(./components/reviews.css);
-@import url(./components/form.css);
-@import url(./components/radio.css);
-@import url(./components/btn.css);
-@import url(./components/map.css);
-@import url(./components/footer.css);
-@import url(./components/fixed-menu.css);
+@import "./blocks/layout/layout";
+@import "./blocks/components/_hero.scss";
+@import "./blocks/components/_section.scss";
+@import "./blocks/components/_benefits.scss";
+@import "./blocks/components/_reviews.scss";
+@import "./blocks/components/_form.scss";
+@import "./blocks/components/_radio.scss";
+@import "./blocks/components/_btn.scss";
+@import "./blocks/components/_map.scss";
+@import "./blocks/components/_footer.scss";
+@import "./blocks/components/_fixed-menu.scss";
 
