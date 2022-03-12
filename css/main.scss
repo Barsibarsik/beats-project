@@ -1,0 +1,43 @@
+$containerWidth: 940px;
+$baseFontSize: 16px;
+
+$grey: #F5F5F5;
+$white: #FFFFFF;
+
+@mixin font {
+    font-family: 'Play', sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 18.5px;
+    // color: #666666;
+    color: green;
+}
+
+@mixin font2 {
+    font-family: 'Play', sans-serif;
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 52px;
+    color: #292929;
+}
+
+@import url(./layout/normalize.css);
+
+@import url("https://fonts.googleapis.com/css2?family=Alegreya+Sans:wght@400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Play:wght@400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans&display=swap");
+
+
+
+@import url(./layout/layout.css);
+@import url(./components/hero.css);
+@import url(./section.css);
+@import url(./components/benefits.css);
+@import url(./components/reviews.css);
+@import url(./components/form.css);
+@import url(./components/radio.css);
+@import url(./components/btn.css);
+@import url(./components/map.css);
+@import url(./components/footer.css);
+@import url(./components/fixed-menu.css);
+

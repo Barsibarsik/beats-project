@@ -1,0 +1,79 @@
+.benefits {
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 98px; }
+
+.benefits-container {
+  position: relative; }
+  .benefits-container:before {
+    content: url("../../img/decor/Rectangle.png");
+    position: absolute;
+    top: -22px;
+    right: 60px;
+    width: 10.5px;
+    height: 46.5px; }
+  .benefits-container:after {
+    content: url("../../img/decor/Vector.png");
+    position: absolute;
+    bottom: -22px;
+    left: -26px;
+    width: 34px;
+    height: 34.5px; }
+
+.benefits__item {
+  flex: 1;
+  padding: 0 3%;
+  position: relative; }
+  .benefits__item:before {
+    content: url(../../img/decor/Combined.png);
+    position: absolute;
+    top: 30px;
+    right: 0;
+    transform: translateX(50%); }
+  .benefits__item:first-child {
+    padding-left: 0; }
+  .benefits__item:last-child {
+    padding-right: 0; }
+    .benefits__item:last-child:before {
+      display: none; }
+
+.benefit {
+  text-align: center; }
+
+.benefit__image-wrapper {
+  display: inline-block;
+  width: 128px;
+  height: 128px;
+  position: relative;
+  background: #F2F5F4;
+  border-radius: 50%;
+  overflow: hidden; }
+
+.benefit__image {
+  margin-bottom: 24px; }
+
+.benefit__icon {
+  height: 60px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%); }
+
+.benefit__text {
+  font-family: 'Play'; }
+
+.benefit__title {
+  color: #292929;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 27.7px;
+  margin-bottom: 7px; }
+
+.benefit__desc {
+  font-family: 'Play', sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 18.5px;
+  color: #666666; }
+
+/*# sourceMappingURL=benefits.css.map */

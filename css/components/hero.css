@@ -1,0 +1,119 @@
+.hero {
+  background: #F5F5F5;
+  padding-bottom: 52px; }
+
+header {
+  display: flex;
+  justify-content: space-between;
+  height: 88px;
+  align-items: center;
+  margin-bottom: 23px; }
+
+.logo {
+  width: 40px;
+  height: 40px;
+  margin-right: 38px; }
+
+.menu {
+  flex: 1;
+  margin-right: 66px; }
+
+.menu__list {
+  width: 100%;
+  display: flex;
+  justify-content: space-between; }
+
+.menu_link {
+  font-family: 'Alegreya Sans', sans-serif;
+  font-weight: 400;
+  font-size: 16px; }
+
+.phone-number {
+  position: relative;
+  font-family: 'Play', sans-serif;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 18px; }
+
+.phone-number:before {
+  content: "";
+  background: url(../../img/icons/phone.png) no-repeat;
+  margin-right: 6px;
+  width: 14px;
+  height: 17px;
+  position: absolute;
+  transform: translate(-133%, 8%); }
+
+.hero__main-section {
+  display: flex; }
+
+.hero__main-left {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between; }
+
+.headline {
+  margin-bottom: 62px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center; }
+
+.headline__title {
+  margin-bottom: 18px; }
+
+.headline__subtitle {
+  padding: 0 21%;
+  font-family: 'Play', sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 18.5px;
+  color: #666666; }
+
+.hero__main-title {
+  font-family: 'Play', sans-serif;
+  font-weight: 700;
+  font-size: 48px;
+  line-height: 52px;
+  width: 90%; }
+
+.hero__title-desc {
+  font-family: 'Alegreya Sans', sans-serif;
+  font-weight: 400;
+  font-size: 21px;
+  line-height: 25px;
+  margin-bottom: 25px; }
+
+.features {
+  display: flex;
+  justify-content: space-between;
+  margin-right: -50px;
+  margin-top: 46px; }
+
+.features__item {
+  display: flex; }
+
+.feature__text {
+  font-family: 'Play', sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 18.5px;
+  color: #666666;
+  color: #292929; }
+
+.feature__icon {
+  margin-right: 12px; }
+
+.hero__main-right {
+  width: 50%;
+  margin-right: 0; }
+
+.hero__beats-img {
+  background: #FFFFFF;
+  border-radius: 50%;
+  overflow: hidden;
+  right: 0;
+  bottom: 0; }
+
+/*# sourceMappingURL=hero.css.map */
