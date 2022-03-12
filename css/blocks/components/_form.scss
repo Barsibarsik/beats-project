@@ -1,20 +1,21 @@
 .oder-section {
-   background: url('../../../img/bg/form.png') center top no-repeat;
+   background: url(../img/bg/form.png) center top no-repeat;
    min-height: 652px; 
    background-size: 100% 100%;
+
 }
 
 .oder-container {
     position: relative;
 
     &:before {
-       content: url(../../../img/decor/polygon.png);
+       content: url(../img/decor/polygon.png);
        position: absolute;
        width: 50.63px;
        height: 50.63px;
        top: -23px;
        right: 10px;
-   }
+       }
 }
 
 .form {

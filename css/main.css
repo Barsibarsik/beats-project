@@ -136,7 +136,7 @@ header {
 
 .phone-number:before {
   content: "";
-  background: url(../../img/icons/phone.png) no-repeat;
+  background: url(../img/icons/phone.png) no-repeat;
   margin-right: 6px;
   width: 14px;
   height: 17px;
@@ -253,6 +253,7 @@ header {
 }
 
 .section {
+  height: 100vh;
   min-height: 500px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -292,7 +293,7 @@ header {
   position: relative;
 }
 .benefits-container:before {
-  content: url("../../../img/decor/Rectangle.png");
+  content: url(../img/decor/Rectangle.png);
   position: absolute;
   top: -22px;
   right: 60px;
@@ -300,7 +301,7 @@ header {
   height: 46.5px;
 }
 .benefits-container:after {
-  content: url("../../../img/decor/Vector.png");
+  content: url(../img/decor/Vector.png);
   position: absolute;
   bottom: -22px;
   left: -26px;
@@ -316,7 +317,7 @@ header {
   position: relative;
 }
 .benefits__item:before {
-  content: url(../../../img/decor/Combined.png);
+  content: url(../img/decor/Combined.png);
   position: absolute;
   top: 30px;
   right: 0;
@@ -493,7 +494,7 @@ header {
 }
 
 .oder-section {
-  background: url("../../../img/bg/form.png") center top no-repeat;
+  background: url(../img/bg/form.png) center top no-repeat;
   min-height: 652px;
   background-size: 100% 100%;
 }
@@ -502,7 +503,7 @@ header {
   position: relative;
 }
 .oder-container:before {
-  content: url(../../../img/decor/polygon.png);
+  content: url(../img/decor/polygon.png);
   position: absolute;
   width: 50.63px;
   height: 50.63px;
@@ -608,7 +609,7 @@ header {
   border-radius: 0;
 }
 .radio--checkbox .radio__visible:before {
-  background: url("../../../img/checkbox.png") center center no-repeat;
+  background: url(../img/checkbox.png) center center no-repeat;
   background-size: 10px 8px;
   border-radius: 0;
 }
