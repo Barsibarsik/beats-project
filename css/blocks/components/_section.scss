@@ -1,16 +1,12 @@
-.section {
+section {
     height: 100vh;
-    min-height: 500px;
-    display: flex;
-    flex-direction: column;
-    justify-content:space-between;
+    min-height: 650px;
 }
 
 .section__title {
     margin-bottom: 32px;
     text-transform: uppercase;
     top: 0;
-    margin-top: 101px;
     text-align: center;
 
     @include font2;

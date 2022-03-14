@@ -18,12 +18,11 @@
         left: 50%;
         transform: translateX(-50%);
         top: -61px;
-               
     }
 }
 
 .reviews__display-inner {
-         display: flex;
+    display: flex;
 }
 
 .reviews__avatar {
@@ -73,8 +72,6 @@
     border-radius: 50%;
     overflow: hidden;
     position: relative;
-    margin-bottom: 63px;
-    // margin-right: 6px;
     box-sizing: border-box;
     
 
@@ -85,7 +82,6 @@
     &--active {
      border-color: #E01F3D;
     }
-
 }
 
 .interactive-avatar__link {
@@ -94,7 +90,6 @@
     left: 0;
     bottom: 0;
     right: 0;
-    
 }
 
 .interactive-avatar__img {
@@ -102,5 +97,4 @@
     height: 100%;
     display: block;
     object-fit: cover;
-    
 }

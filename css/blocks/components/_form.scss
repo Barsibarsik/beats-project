@@ -1,11 +1,11 @@
-.oder-section {
+.oder {
    background: url(../img/bg/form.png) center top no-repeat;
    min-height: 652px; 
    background-size: 100% 100%;
 
 }
 
-.oder-container {
+.oder__container {
     position: relative;
 
     &:before {
@@ -25,7 +25,6 @@
 .section__title--form {
     color: white;
     margin-bottom: 61px;
-    margin-top: 68px;
 }
 
 .form__title {
