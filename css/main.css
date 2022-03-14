@@ -284,7 +284,7 @@ header {
   bottom: 0;
 }
 
-section {
+.section {
   height: 100vh;
   min-height: 650px;
 }
