@@ -9,54 +9,29 @@
 header {
     display: flex;
     justify-content: space-between;
-    height: 88px;
+    height: rem(88px);
     align-items: center;
 }
 
 .logo {
-    width: 40px;
-    height: 40px;
-    margin-right: 38px;
-}
-.menu {
-    flex: 1;
-    margin-right: 66px;
+    width: rem(40px);
+    height: rem(40px);
+    margin-right: rem(38px);
 }
 
-.menu__list {
-    width: 100%;
-    display: flex;
-    justify-content: space-between;
-}
 
-.menu__link {
-    font-family: 'Alegreya Sans', sans-serif;
-    font-weight: 400;
-    font-size: $baseFontSize;
-}
 
-.phone-number {
-    position: relative;
-    font-family: 'Play', sans-serif;
-    font-weight: 400;
-    font-size: 18px;
-    line-height: 18px;
-}
 
-.phone-number:before {
-    content: "";
-    background: url(../img/icons/phone.png) no-repeat;
-    margin-right: 6px;
-    width: 14px;
-    height: 17px;
-    position: absolute;
-    transform: translate(-133%, 8%);
-}
 
 .hero__main-section {
     display: flex;
     align-items: center;
     flex: 1;
+
+    @include tablets {
+        flex-direction: column-reverse;
+        justify-content: center;
+    }
 }
 
 .hero__main-left {
@@ -65,10 +40,18 @@ header {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+
+    @include tablets {
+        width: 100%;
+        height: 50%;
+        text-align: center;
+        justify-content: flex-start;
+        padding-top: rem(40px);
+    }
 }
 
 .headline {
-    margin-bottom: 62px;
+    margin-bottom: rem(62px);
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -76,7 +59,7 @@ header {
 }
 
 .headline__title {
-    margin-bottom: 18px;
+    margin-bottom: rem(18px);
 }
 
 .headline__subtitle {
@@ -88,24 +71,49 @@ header {
 .hero__main-title {
     font-family: 'Play', sans-serif;
     font-weight: 700;
-    font-size: 48px;
-    line-height: 52px;
+    font-size: rem(48px);
+    line-height: rem(52px);
     width: 90%;
+
+    @include tablets {
+        align-self: center;
+        margin-bottom: rem(5px);
+    }
+
+    @include minimum {
+        font-size: rem(36px);
+    }
+
 }
 
 .hero__title-desc {
     font-family: 'Alegreya Sans', sans-serif;
     font-weight: 400;
-    font-size: 21px;
-    line-height: 25px;
-    margin-bottom: 25px;
+    font-size: rem(21px);
+    line-height: rem(25px);
+    margin-bottom: rem(25px);
+
+    @include tablets {
+        width: rem(400px);
+        align-self: center;
+    }
+
+    @include minimum {
+        width: rem(315px);
+    }
+}
+
+.hero__icons-section {
+    @include tablets {
+        display: none;
+    }
 }
 
 .features {
     display: flex;
     justify-content: space-between;
-    margin-right: -50px;
-    margin-top: 46px;
+    margin-right: rem(-50px);
+    margin-top: rem(46px);
 }
 
 .features__item {
@@ -113,14 +121,9 @@ header {
 }
 
 .feature__text {
-   @include font;
-    color: #292929; 
+    @include font;
+    color: #292929;
 }
-
-.feature__icon {
-    margin-right: 12px;
-}
-
 
 .hero__main-right {
     width: 50%;
@@ -128,6 +131,19 @@ header {
     margin-right: 0;
     display: flex;
     align-items: center;
+
+    @include tablets {
+        height: 50%;
+        align-items: flex-end;
+        padding-bottom: rem(24px);
+    }
+
+    @include phones {
+        height: 50%;
+        align-self: center;
+        justify-content: center;
+        padding-top: rem(17px);
+    }
 }
 
 .hero__beats-img {

@@ -1,27 +1,41 @@
 .benefits {
     display: flex;
     justify-content: space-around;
+    position: relative;
+
+    &:before {
+        content: url(../img/decor/Rectangle.svg);
+        position: absolute;
+        top: rem(-20px);
+        right: rem(127px);
+        width: rem(10.5px);
+        height: rem(46.5px);
+    }
+
+    &:after {
+        content: url(../img/decor/Vector.svg);
+        position: absolute;
+        bottom: rem(-13px);
+        left: rem(60px);
+        width: rem(34px);
+        height: rem(34.5px);
+    }
+
+    @include phones {
+        flex-direction: column;
+    }
 }
 
 .benefits__container {
     position: relative;
+}
 
-    &:before {
-        content: url(../img/decor/Rectangle.png);
-        position: absolute;
-        top: -22px;
-        right: 60px;
-        width: 10.5px;
-        height: 46.5px;
-    }
+.benefits__content {
+    display: flex;
+    justify-content: space-around;
 
-    &:after {
-        content: url(../img/decor/Vector.png);
-        position: absolute;
-        bottom: -22px;
-        left: -26px;
-        width: 34px;
-        height: 34.5px;
+    @include phones {
+        flex-direction: column;
     }
 }
 
@@ -29,13 +43,19 @@
     flex: 1;
     padding: 0 3%;
     position: relative;
-
+    
     &:before {
-        content: url(../img/decor/Combined.png);
+        content: url(../img/decor/Combined.svg);
+        width: rem(70px);
+        height: rem(24px);
         position: absolute;
-        top: 30px;
+        top: rem(52px);
         right: 0;
         transform: translateX(50%);
+
+        @include phones {
+            display: none;
+        }
     }
 
     &:first-child {
@@ -47,6 +67,17 @@
 
         &:before {display: none;}
     }
+
+    @include tablets {
+        padding: 0 1%;
+    }
+
+    @include phones {
+        display: flex;
+        align-items: center;
+        padding: 0 0;
+        margin-bottom: rem(30px);
+    }
 }
 
 .benefit {
@@ -55,8 +86,8 @@
 
 .benefit__image-wrapper {
     display: inline-block;
-    width: 128px;
-    height: 128px;
+    width: rem(128px);
+    height: rem(128px);
     position: relative;
     background: #F2F5F4;
     border-radius: 50%;
@@ -64,29 +95,69 @@
 }
 
 .benefit__image {
-    margin-bottom: 24px;
-}
+    margin-bottom: rem(24px);
 
-.benefit__icon {
-   height: 60px; 
-   position: absolute;
-   top: 50%;
-   left: 50%;
-   transform: translate(-50%, -50%);
+    @include phones {
+        margin-right: rem(12px);
+        margin-bottom: 0;
+    }
 }
 
 .benefit__text {
     font-family: 'Play';
+
+    @include phones {
+        text-align: left;
+    }
 }
 
 .benefit__title {
     color: #292929;
     font-weight: 700;
-    font-size: 24px;
-    line-height: 27.7px;
-    margin-bottom: 7px;
+    font-size: rem(24px);
+    line-height: rem(27.7px);
+    margin-bottom: rem(7px);
+
+    @include tablets {
+        margin-bottom: rem(20px);
+    }
 }
 
 .benefit__desc {
     @include font;
+}
+
+.benefits__headline {
+    @include tablets {
+        margin-bottom: rem(52px);
+    }
+}
+
+.benefits__title {
+    margin-bottom: rem(18px);
+
+    @include tablets {
+        margin-bottom: rem(11px);
+    }
+
+    @include phones {
+        font-size: rem(32px);
+        line-height: rem(36px);
+    }
+}
+
+.benefits__subtitle {
+    padding: 0 21%;
+    font-size: rem(16px);
+
+    @include font;
+
+    @include tablets {
+        width: 100%;
+        padding: 0 15%;
+    }
+
+    @include phones {
+        padding: 0 5%;
+    }
 }

@@ -1,10 +1,20 @@
+.reviews {
+    position: relative;
+}
+
+.reviews__container {
+    @include tablets {
+        display: flex;
+        align-items: center;
+    }
+}
+
 .reviews__display {
     background: #F8FAF9;
-    padding: 42px;
+    padding: rem(42px);
     width: 100%;
     display: flex;
     position: relative;
-    margin-bottom: 15px;
     overflow: hidden;
     
     &:before {
@@ -12,69 +22,98 @@
         position: absolute;
         display: block;
         background: white;
-        width: 83px;
-        height: 83px;
+        width: rem(83px);
+        height: rem(83px);
         border-radius: 50%;
         left: 50%;
         transform: translateX(-50%);
-        top: -61px;
+        top: rem(-61px);
+    }
+
+    @include tablets {
+        margin-bottom: rem(32px);
     }
 }
 
 .reviews__display-inner {
     display: flex;
+
+    @include tablets {
+        flex-direction: column;
+        text-align: center;
+        align-items: center;
+    }
 }
 
 .reviews__avatar {
-    min-width: 253px;
-    height: 264px;
-    margin-right: 40px;
+    min-width: rem(253px);
+    height: rem(264px);
+    margin-right: rem(40px);
 
     &-img {
-    object-fit: cover;
+    // object-fit: cover;
     width: 100%;
     height: 100%;
+    }
+
+    @include tablets {
+        min-width: rem(130px);
+        height: rem(130px);
+        margin-right: 0;
     }
 }
 
 .reviews__title {
     font-family: 'Play', sans-serif;
     font-weight: 700;
-    font-size: 24px;
-    line-height: 27.7px;
-    margin-top: 32px;
-    margin-bottom: 27px;
+    font-size: rem(24px);
+    line-height: rem(27.7px);
+    margin-top: rem(32px);
+    margin-bottom: rem(27px);
+
+    @include tablets {
+        margin-top: rem(32px);
+        margin-bottom: rem(16px);
+    }
 }
 
 .reviews__text {
     @include font;
 
-    margin-right: 62px;
+    margin-right: rem(62px);
+
+    @include tablets {
+        margin-right: 0;
+    }
 }
 
 .reviews__autor {
-    margin-top: 38px;
+    margin-top: rem(38px);
     font-family: 'Play', sans-serif;
     font-weight: 700;
-    font-size: 18px;
-    line-height: 20.8px;
+    font-size: rem(18px);
+    line-height: rem(20.8px);
+
+    @include tablets {
+        margin-top: rem(16px);
+    }
 }
 
 .reviews__switcher {
     display: flex;
     justify-content: center;
+    margin-top: rem(15px);
 }
 
 .interactive-avatar {
-    width: 74px;
-    height: 74px;
-    border: 4px solid transparent;
+    width: rem(74px);
+    height: rem(74px);
+    border: rem(4px) solid transparent;
     border-radius: 50%;
     overflow: hidden;
     position: relative;
     box-sizing: border-box;
-    
-
+        
     &:last-child {
         margin-right: 0;
     }

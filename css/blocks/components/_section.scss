@@ -1,15 +1,16 @@
 .section {
     height: 100vh;
-    min-height: 650px;
+    min-height: rem(650px);
 }
 
 .section__title {
-    margin-bottom: 32px;
+    margin-bottom: rem(32px);
     text-transform: uppercase;
     top: 0;
     text-align: center;
 
     @include font2;
 }
+
 
 

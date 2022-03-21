@@ -1,0 +1,48 @@
+.phone-number {
+    position: relative;
+    font-family: 'Play', sans-serif;
+    font-weight: 400;
+    font-size: rem(18px);
+    line-height: rem(18px);
+    white-space: nowrap;
+    flex-shrink: 0;
+
+    &:before {
+        content: "";
+        background: url(../img/icons/6phone.svg) center center / contain no-repeat;
+        margin-right: rem(6px);
+        width: rem(14px);
+        height: rem(17px);
+        position: absolute;
+        transform: translate(-133%, 8%);
+    }
+}
+
+.phone-number.header__phone-number {
+    @include tablets {
+        display: none;
+    }
+}
+
+.footer__phone-number {
+    margin-left: rem(19px);
+}
+
+.address {
+    font-family: 'Play', sans-serif;
+    font-weight: 400;
+    font-size: rem(18px);
+    line-height: rem(24px);
+    font-style: normal;
+    margin-bottom: rem(3px);
+    
+
+    @include tablets {
+        font-size: rem(21px);
+    }
+
+    @include phones {
+        margin-bottom: rem(12px);
+        text-align: center;
+    }
+}

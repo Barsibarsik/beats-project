@@ -1,0 +1,26 @@
+.menu {
+    flex: 1;
+    margin-right: rem(66px);
+   
+    @include tablets {
+        display: none;
+    }
+}
+
+.menu__item {
+    margin-right: rem(27px);
+}
+
+.menu__list {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.menu__link {
+    font-family: 'Alegreya Sans', sans-serif;
+    font-weight: 400;
+    font-size: $baseFontSize;
+    white-space: nowrap;
+}
