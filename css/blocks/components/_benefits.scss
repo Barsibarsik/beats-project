@@ -10,6 +10,7 @@
         right: rem(127px);
         width: rem(10.5px);
         height: rem(46.5px);
+        z-index: 100;
     }
 
     &:after {
@@ -19,6 +20,7 @@
         left: rem(60px);
         width: rem(34px);
         height: rem(34.5px);
+        z-index: 100;
     }
 
     @include phones {

@@ -1,0 +1,50 @@
+.dropdown__menu {
+    position: absolute;
+    background: #D5D5D5;
+    width: rem(273px);
+    height: rem(294px);
+    border-radius: 4px;
+    // margin-left: rem(91px);
+    padding-left: rem(35.5px);
+    padding-right: rem(25px);
+    padding-top: rem(28px);
+    padding-bottom: rem(34px);
+    top: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    opacity: 0;
+    transition: opacity 1s;
+    left: rem(999px);
+}
+
+.product__ingredients:hover .dropdown__menu {
+    opacity: 1;
+    left: rem(91px);
+}
+
+.dropdown__menu-ingredients {
+    display: flex; 
+    justify-content: space-between;   
+}
+
+.dropdown__menu-item {
+    display: flex;
+}
+
+.dropdown__menu-item__icon {
+    width: rem(24px);
+    height: rem(24px);
+    margin-right: rem(16px);
+    color: #000000;
+}
+
+.dropdown__menu-item__name,
+.dropdown__menu-value {
+    font-family: 'Play', sans-serif;
+    font-weight: 400;
+    font-size: rem(16px);
+    line-height: rem(24px);
+    color: #000000;
+}
+

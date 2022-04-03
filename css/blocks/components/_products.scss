@@ -1,0 +1,269 @@
+.products {
+    background: #F8FAF9;
+    position: relative;
+    &:after {
+        content: url(../img/decor/Rectangle2.svg);
+        position: absolute;
+        width: rem(24px);
+        height: rem(24px);
+        bottom: rem(-11px);
+        right: rem(70px);
+        z-index: 100;
+    }
+}
+
+.products-slider {
+    width: 100%;
+    height: 100%;
+    position: relative;
+
+    @include tablets {
+        display: flex;
+        justify-content: center;
+    }
+}
+
+.products__list {
+    width: 100%;
+    height: 100%;
+
+}
+
+.products__item {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    flex: 1;
+
+    @include tablets {
+        flex-direction: column;
+    }
+}
+
+.product__col-left {
+    width: 50%;
+    height: auto;
+
+    @include tablets {
+        width: 100%;
+        height: 50%;
+        display: flex;
+        justify-content: space-around;
+        
+    }
+}
+
+.product__beats {
+    max-width: 100%;
+    max-height: rem(452px);
+    border-radius: 50%;
+    overflow: hidden;
+    background: #ffffff;
+    align-self: center;
+    right: 0;
+    margin-left: rem(33px);
+    
+    
+    @include tablets {
+        max-width: rem(306px);
+        max-height: rem(306px);
+        margin-bottom: rem(9px);
+        margin-top: 22.8%;
+        margin-left: 0;
+    }
+
+    @include minimum {
+        max-width: rem(250px);
+        max-height: rem(250px);
+    }
+}
+
+.product__beats-img {
+    padding: 50px;
+}
+
+.product__col-right {
+    width: 50%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding-left: rem(59px);
+    position: relative;
+    padding-bottom: 30px;
+
+    @include tablets {
+        width: 100%;
+        height: 50%;
+        padding-left: 0;
+    }
+}
+
+.product__ingredients {
+    width: rem(91px);
+    height: rem(91px);
+    margin-bottom: rem(25px);
+    border-radius: 4px;
+    background: #9A9A9A;
+    transition: 0.5s background;
+
+    &:hover {
+        background: #6E6E6E;
+    }
+
+    @include tablets {
+        display: none;
+    }
+    @include phones {
+        display: none;
+    }
+
+}
+
+.product__ingredients-btn {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.ingedients-btn__img {
+    width: 46%;
+    height: 46%;
+}
+
+.product__title {
+    font-family: 'Play', sans-serif;
+    font-weight: 700;
+    font-size: rem(36px);
+    line-height: rem(41px);
+    color: #292929;
+    margin-bottom: rem(24px);
+
+    @include tablets {
+        font-size: rem(28px);
+        line-height: rem(32px);
+        margin-top: rem(9px);
+        text-align: center;
+        margin-bottom: rem(14px);
+    }
+}
+
+.product__text {
+    @include font;
+
+    margin-bottom: rem(27px);
+    margin-right: rem(37px);
+
+    @include tablets {
+        text-align: center;
+        margin-right: 0;
+        margin-bottom: rem(27px);
+    }
+}
+
+.product__info {
+    display: flex;
+    margin-bottom: rem(24px);
+
+    @include tablets {
+        justify-content: center;
+    }
+}
+
+.product__info-chargre {
+    margin-right: rem(86px);
+
+    @include tablets {
+        width: 50%;
+        text-align: right;
+        margin-right: rem(64px);
+    }
+}
+
+.product__info-title {
+    @include font;
+
+    margin-bottom: rem(1px);
+}
+
+.product__info-info {
+    font-family: 'Play', sans-serif;
+    font-weight: 700;
+    font-size: rem(18px);
+    line-height: rem(21px);
+}
+
+.product__info-weight {
+    @include tablets {
+        width: 50%;
+        text-align: left;
+        margin-left: rem(22px);
+    }
+}
+
+.product__down-line {
+    display: flex;
+}
+
+.price {
+    font-family: 'Play', sans-serif;
+    font-weight: 400;
+    font-size: rem(36px);
+    line-height: rem(60px);
+    margin-right: rem(13px);
+    
+    @include tablets {
+        font-size: rem(40px);
+        width: 50%;
+        text-align: right;
+        margin-right: rem(16.5px);
+    }
+
+    @include phones {
+        font-size: rem(36px);
+    }
+
+    @include minimum {
+        font-size: rem(30px);
+    } 
+}
+
+.product-btn {
+    @include tablets {
+        width: 50%;
+        margin-left: rem(16.5px);
+    }
+}
+
+.products-slider__arrows {
+    position: absolute;
+    width: 104%;
+    display: flex;
+    justify-content: space-between;
+    margin-left: -2%;
+    top: 50%;
+    
+    @include tablets {
+        width: rem(455px);
+        margin-left: 0;
+        top: 30%;
+    }
+
+    @include minimum {
+        top: 28%;
+        width: rem(340px);
+    }
+}
+
+.product-slider__arrow-direction {
+    width: rem(13.5px);
+    height: rem(27px);
+}
+
+
+
+
+

@@ -1,5 +1,15 @@
 .reviews {
     position: relative;
+
+    &:after {
+        content: url(../img/decor/Ellipse.svg);
+        position: absolute;
+        width: rem(35px);
+        height: rem(35px);
+        left: 80px;
+        bottom: rem(-17.5px);
+        z-index: 100;
+    }
 }
 
 .reviews__container {
